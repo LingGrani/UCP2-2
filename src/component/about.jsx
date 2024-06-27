@@ -1,7 +1,77 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Container, Row, Col, Card, Modal, Button } from 'react-bootstrap';
+import brownies from '../assets/brownies.jpg';
+import cheesecake from '../assets/cheesecake.jpg';
+import cupcake from '../assets/cupcake.jpg';
+import redvelvet from '../assets/redvelvet.jpg';
+import tiramisucake from '../assets/tiramisucake.jpg';
+import kueultah from '../assets/kueultah.jpg';
 
-function About() {
-  return <h2>About Page</h2>;
-}
+const About = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [selectedCake, setSelectedCake] = useState({});
+
+  const handleShowModal = (cake) => {
+    setSelectedCake(cake);
+    setShowModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+
+  // Data kue
+  const cakes = [
+    { id: 1, title: 'Cheese Cake', image: cheesecake, description: 'Cheese Cake yang lumer dengan keju yang meluber luber dan dengan kue yang lembut' },
+    { id: 2, title: 'Brownies', image: brownies, description: 'Brownies Lezatos Klotos Klotos mbelodes menggigit cokelat' },
+    { id: 3, title: 'Cupcake', image: cupcake, description: 'Cupcake lezatos yang manis dengan taburan gula halus di atasnya' },
+    { id: 4, title: 'Red Velvet', image: redvelvet, description: 'Red velvet dengan warna merah menggoda iman bagi yang melihatnya' },
+    { id: 5, title: 'Tiramisu Cake', image: tiramisucake, description: 'Tiramisu Cake yang lezat karena dibuat dengan cinta sepenuh hati dari owner' },
+    { id: 6, title: 'BirthDay Cake', image: kueultah, description: 'Birthday Cake untuk merayakan mereka yang ulang tahun dan memakan nya dengan rasa yang tidak akan dilupakan' }
+  ];
+
+  return (
+    <Container id="about" className="py-5">
+      <Row className="text-center mb-4">
+        <Col>
+          <h2>Lorem Ipsum</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </Col>
+      </Row>
+      <Row>
+        {cakes.map(cake => (
+          <Col key={cake.id} md={6} className="mb-4">
+            <Card>
+              <div className="card-img-placeholder" onClick={() => handleShowModal(cake)} />
+              <Card.Img variant="top" src={cake.image} alt={cake.title} onClick={() => handleShowModal(cake)} />
+              <Card.Body>
+                <Card.Title>{cake.title}</Card.Title>
+                <Card.Text>
+                  {cake.description}
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+        ))}
+      </Row>
+
+      {/* Modal untuk gambar */}
+      <Modal show={showModal} onHide={handleCloseModal} centered>
+        <Modal.Header closeButton>
+          <Modal.Title>{selectedCake.title}</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <img src={selectedCake.image} alt={selectedCake.title} className="img-fluid mb-3" />
+          <p>{selectedCake.description}</p>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={handleCloseModal}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+    </Container>
+  );
+};
 
 export default About;
