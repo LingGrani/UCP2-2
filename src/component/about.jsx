@@ -31,46 +31,56 @@ const About = () => {
   ];
 
   return (
-    <Container id="about" className="py-5">
-      <Row className="text-center mb-4">
-        <Col>
-          <h2>Lorem Ipsum</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </Col>
-      </Row>
-      <Row>
-        {cakes.map(cake => (
-          <Col key={cake.id} md={6} className="mb-4">
-            <Card>
-              <div className="card-img-placeholder" onClick={() => handleShowModal(cake)} />
-              <Card.Img variant="top" src={cake.image} alt={cake.title} onClick={() => handleShowModal(cake)} />
-              <Card.Body>
-                <Card.Title>{cake.title}</Card.Title>
-                <Card.Text>
-                  {cake.description}
-                </Card.Text>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
-      </Row>
+    <>
+    <section id="backgroundimage">
 
-      {/* Modal untuk gambar */}
-      <Modal show={showModal} onHide={handleCloseModal} centered>
-        <Modal.Header closeButton>
-          <Modal.Title>{selectedCake.title}</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-          <img src={selectedCake.image} alt={selectedCake.title} className="img-fluid mb-3" />
-          <p>{selectedCake.description}</p>
-        </Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleCloseModal}>
-            Close
-          </Button>
-        </Modal.Footer>
-      </Modal>
-    </Container>
+    </section>
+    <section id="gambarkue">
+      <Container id="about" className="py-5">
+        <Row className="text-center mb-4">
+          <Col>
+            <h2>Lorem Ipsum</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </Col>
+        </Row>
+        <Row>
+          {cakes.map(cake => (
+            <Col key={cake.id} md={6} className="mb-4">
+              <Card>
+                <div className="card-img-placeholder" onClick={() => handleShowModal(cake)} />
+                <Card.Img variant="top" src={cake.image} alt={cake.title} onClick={() => handleShowModal(cake)} />
+                <Card.Body>
+                  <Card.Title>{cake.title}</Card.Title>
+                  <Card.Text>
+                    {cake.description}
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+
+        {/* Modal untuk gambar */}
+        <Modal show={showModal} onHide={handleCloseModal} centered>
+          <Modal.Header closeButton>
+            <Modal.Title>{selectedCake.title}</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+            <img src={selectedCake.image} alt={selectedCake.title} className="img-fluid mb-3" />
+            <p>{selectedCake.description}</p>
+          </Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleCloseModal}>
+              Close
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      </Container>
+    </section>
+    <section id="service">
+      
+    </section>
+    </>
   );
 };
 
