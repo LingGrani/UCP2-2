@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import bgimage from '../assets/bg.jpg';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -23,54 +24,55 @@ const Contact = () => {
   return (
     <div className="contact-page">
       <div className="content">
-        <section className="my-5">
-          <div class="bg" style="background-image: url();"></div>
-          <h1 className="text-center">Header 1</h1>
-          <p className="text-center">Kritik dan Saran<br />Selalu kami dengarkan</p>
-          <div className="row">
-            <div className="col-md-6 mx-auto">
-              <form onSubmit={handleSubmit} className="border border-dark rounded p-4">
-                <div className="mb-3">
-                  <label htmlFor="name" className="form-label">Name</label>
-                  <input
-                    type="text"
-                    className="form-control"
-                    id="name"
-                    placeholder="Enter your name"
-                    value={formData.name}
-                    onChange={handleChange}
-                  />
-                </div>
-                <div className="mb-3">
-                  <label htmlFor="email" className="form-label">Email address</label>
-                  <input
-                    type="email"
-                    className="form-control"
-                    id="email"
-                    placeholder="name@example.com"
-                    value={formData.email}
-                    onChange={handleChange}
-                  />
-                </div>
-                <div className="mb-3">
-                  <label htmlFor="message" className="form-label">Message</label>
-                  <textarea
-                    className="form-control"
-                    id="message"
-                    rows="3"
-                    placeholder="Enter your message"
-                    value={formData.message}
-                    onChange={handleChange}
-                  ></textarea>
-                </div>
-                <button className="btn btn-dark" type="submit">
-                  Submit
-                </button>
-              </form>
+        <section>
+          <div className="bg" style={{ backgroundImage: `url(${bgimage})`, backgroundSize: 'cover', backgroundPosition: 'center', padding: '50px'}}>
+            <h1 className="text-center">Reviews</h1>
+            <p className="text-center">Kritik dan Saran<br />Selalu kami dengarkan</p>
+            <div className="row">
+              <div className="col-md-6 mx-auto">
+                <form onSubmit={handleSubmit} className="border border-dark rounded p-4 bg-white">
+                  <div className="mb-3">
+                    <label htmlFor="name" className="form-label">Name</label>
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="name"
+                      placeholder="Enter your name"
+                      value={formData.name}
+                      onChange={handleChange}
+                    />
+                  </div>
+                  <div className="mb-3">
+                    <label htmlFor="email" className="form-label">Email address</label>
+                    <input
+                      type="email"
+                      className="form-control"
+                      id="email"
+                      placeholder="name@example.com"
+                      value={formData.email}
+                      onChange={handleChange}
+                    />
+                  </div>
+                  <div className="mb-3">
+                    <label htmlFor="message" className="form-label">Message</label>
+                    <textarea
+                      className="form-control"
+                      id="message"
+                      rows="3"
+                      placeholder="Enter your message"
+                      value={formData.message}
+                      onChange={handleChange}
+                    ></textarea>
+                  </div>
+                  <button className="btn btn-dark" type="submit">
+                    Submit
+                  </button>
+                </form>
+              </div>
             </div>
           </div>
         </section>
-        <section className="my-5">
+        <section className="mt-5 mb-5 container mt-3">
           <div className="row">
             <div className="col-md-6">
               <h2>Hubungi Kami</h2>
@@ -83,7 +85,7 @@ const Contact = () => {
               </p>
               <p>
                 <h5>Email</h5>
-                <a className="text-dark" href="mailto:example@example.com"><p>Email (mail to)</p></a>
+                <a className="text-dark" href="mailto:example@example.com"><p>Email</p></a>
               </p>
             </div>
             <div className="col-md-6">

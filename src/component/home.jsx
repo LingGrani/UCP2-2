@@ -1,5 +1,4 @@
 import React from "react";
-import { Container, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 // Video
@@ -37,13 +36,13 @@ const Home = () => {
         <source src={video} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <Container style={overlayStyle}>
+      <div style={overlayStyle}>
         <h1 style={textStyles}>Welcome to Our Website</h1>
         <p style={{ fontSize: '1.5rem' }}>Discover the Best Cakes in Town</p>
         <Link to="/about">
-          <Button variant="primary">Explore More</Button>
+          <button variant="primary">Explore More</button>
         </Link>
-      </Container>
+      </div>
     </div>
   );
 };
