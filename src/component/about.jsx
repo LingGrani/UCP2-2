@@ -6,6 +6,7 @@ import cupcake from '../assets/cupcake.jpg';
 import redvelvet from '../assets/redvelvet.jpg';
 import tiramisucake from '../assets/tiramisucake.jpg';
 import kueultah from '../assets/kueultah.jpg';
+import bgimage from '../assets/bg2.jpg';
 
 const About = () => {
   const [showModal, setShowModal] = useState(false);
@@ -32,8 +33,10 @@ const About = () => {
 
   return (
     <>
-    <section id="backgroundimage">
-
+    <section id="backgroundimage" style={{ backgroundImage: `url(${bgimage})`, backgroundSize: 'cover', backgroundPosition: 'center', padding: '40px'}}>
+      <div className="mt-5 mb-5 container">
+        <h1>Toko Kue</h1>
+      </div>
     </section>
     <section id="gambarkue">
       <Container id="about" className="py-5">
@@ -45,7 +48,7 @@ const About = () => {
         </Row>
         <Row>
           {cakes.map(cake => (
-            <Col key={cake.id} md={6} className="mb-4">
+            <Col key={cake.id} md={4} className="mb-4">
               <Card>
                 <div className="card-img-placeholder" onClick={() => handleShowModal(cake)} />
                 <Card.Img variant="top" src={cake.image} alt={cake.title} onClick={() => handleShowModal(cake)} />

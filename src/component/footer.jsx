@@ -27,9 +27,9 @@ function Footer() {
               <a href="mailto:example@example.com"><p>Email</p></a>
             </p>
             <p className="mb-0">
-              <img src={wa} alt="WhatsApp" className="img-fluid" style={{ width: "80px", padding:"10px"}}/>
-              <img src={ig} alt="Instagram" className="img-fluid"style={{ width: "80px", padding:"10px"}}/>
-              <img src={tt} alt="TikTok" className="img-fluid"style={{ width: "80px", padding:"10px"}}/>
+              <img src={wa} alt="WhatsApp" className="img-fluid" style={{ width: "50px", padding:"10px"}}/>
+              <img src={ig} alt="Instagram" className="img-fluid"style={{ width: "50px", padding:"10px"}}/>
+              <img src={tt} alt="TikTok" className="img-fluid"style={{ width: "50px", padding:"10px"}}/>
             </p>
           </div>
         </div>

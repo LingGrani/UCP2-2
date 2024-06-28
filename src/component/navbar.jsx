@@ -8,13 +8,13 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
-              <NavLink exact className="nav-link" activeClassName="active" to="/" style={{ fontSize: '30px' }}>Home</NavLink>
+              <NavLink exact className="nav-link" activeClassName="active" to="/">Home</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" activeClassName="active" to="/about" style={{ fontSize: '30px' }}>About</NavLink>
+              <NavLink className="nav-link" activeClassName="active" to="/about">About</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" activeClassName="active" to="/contact" style={{ fontSize: '30px' }}>Contact</NavLink>
+              <NavLink className="nav-link" activeClassName="active" to="/contact">Contact</NavLink>
             </li>
           </ul>
         </div>

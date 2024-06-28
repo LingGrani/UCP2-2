@@ -72,7 +72,7 @@ const Contact = () => {
             </div>
           </div>
         </section>
-        <section className="mt-5 mb-5 container mt-3">
+        <section className="mt-5 mb-5 container">
           <div className="row">
             <div className="col-md-6">
               <h2>Hubungi Kami</h2>
