@@ -87,8 +87,8 @@ const About = () => {
     </section>
     <section id="service">
       <div className="container mb-5">
-        <h2 className="text-center">Layanan Kami</h2>
-        <p className="text-center">Nikmati berbagai pilihan kue dan layanan istimewa kami</p>
+        <h2>Layanan Kami</h2>
+        <p>Nikmati berbagai pilihan kue dan layanan istimewa kami</p>
         <div className="row">
           <div className="col-md-4">
             <span class="material-symbols-outlined">bakery_dining</span>
