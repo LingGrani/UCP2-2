@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Swal from 'sweetalert2'; // Import SweetAlert2
 import bgimage from '../assets/bg.jpg';
 
 const Contact = () => {
@@ -17,15 +18,19 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert(`Name: ${formData.name}\nEmail: ${formData.email}\nMessage: ${formData.message}`);
-    // Tambahkan logika untuk mengirim data formulir ke backend atau melakukan aksi lainnya di sini
+    Swal.fire({
+      title: 'Kritik dan Saran Diterima!',
+      html: `Name: ${formData.name}<br />Email: ${formData.email}<br />Message: ${formData.message}`,
+      icon: 'success',
+      confirmButtonText: 'OK'
+    });
   };
 
   return (
     <div className="contact-page">
       <div className="content">
         <section>
-          <div className="bg" style={{ backgroundImage: `url(${bgimage})`, backgroundSize: 'cover', backgroundPosition: 'center', padding: '50px'}}>
+          <div className="bg" style={{ backgroundImage: `url(${bgimage})`, backgroundSize: 'cover', backgroundPosition: 'center', padding: '50px' }}>
             <h1 className="text-center">Reviews</h1>
             <p className="text-center">Kritik dan Saran<br />Selalu kami dengarkan</p>
             <div className="row">
@@ -64,7 +69,7 @@ const Contact = () => {
                       onChange={handleChange}
                     ></textarea>
                   </div>
-                  <button className="btn btn-dark" type="submit">
+                  <button className="btn btn-warning" type="submit">
                     Submit
                   </button>
                 </form>
@@ -77,7 +82,7 @@ const Contact = () => {
             <div className="col-md-6">
               <h2>Hubungi Kami</h2>
               <p>
-                Jika anda berminat segera hubungi dan daftar lalu Healing bersama kami
+                Jika anda berminat segera hubungi kami
               </p>
               <p>
                 <h5>Whatsapp</h5>
@@ -85,7 +90,7 @@ const Contact = () => {
               </p>
               <p>
                 <h5>Email</h5>
-                <a className="text-dark" href="mailto:example@example.com"><p>Email</p></a>
+                <a className="text-dark" href="mailto:example@example.com"><p>example@example.com</p></a>
               </p>
             </div>
             <div className="col-md-6">

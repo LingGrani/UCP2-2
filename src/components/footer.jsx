@@ -26,7 +26,7 @@ function Footer() {
               <a href="https://wa.me/+6282335982028" className='text-white'><p>+62 823-3598-2028</p></a>
             </p>
             <p>
-              <a href="mailto:example@example.com" className='text-white'><p>Email</p></a>
+              <a href="mailto:example@example.com" className='text-white'><p>example@example.com</p></a>
             </p>
             <p className="mb-0">
               <a href="https://wa.me/+6282335982028">
