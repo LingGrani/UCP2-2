@@ -28,7 +28,7 @@ const About = () => {
     { id: 3, title: 'Cupcake', image: cupcake, description: 'Cupcake lezatos yang manis dengan taburan gula halus di atasnya' },
     { id: 4, title: 'Red Velvet', image: redvelvet, description: 'Red velvet dengan warna merah menggoda iman bagi yang melihatnya' },
     { id: 5, title: 'Tiramisu Cake', image: tiramisucake, description: 'Tiramisu Cake yang lezat karena dibuat dengan cinta sepenuh hati dari owner' },
-    { id: 6, title: 'BirthDay Cake', image: kueultah, description: 'Birthday Cake untuk merayakan mereka yang ulang tahun dan memakan nya dengan rasa yang tidak akan dilupakan' }
+    { id: 6, title: 'BirthDay Cake', image: kueultah, description: 'Birthday Cake untuk merayakan mereka yang ulang tahun dengan rasa yang tidak akan dilupakan' }
   ];
 
   return (
@@ -42,8 +42,8 @@ const About = () => {
       <Container id="about" className="py-5">
         <Row className="text-center mb-4">
           <Col>
-            <h2>Lorem Ipsum</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h2>Katalog Kue</h2>
+            <p>Berikut adalah katalog atau jenis jenis kue yang dijual ditoko kami bisa dilihat setelah ini ya</p>
           </Col>
         </Row>
         <Row>
