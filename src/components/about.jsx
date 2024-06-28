@@ -7,6 +7,7 @@ import redvelvet from '../assets/redvelvet.jpg';
 import tiramisucake from '../assets/tiramisucake.jpg';
 import kueultah from '../assets/kueultah.jpg';
 import bgimage from '../assets/bg2.jpg';
+import bannerimg from '../assets/banner.jpg';
 
 const About = () => {
   const [showModal, setShowModal] = useState(false);
@@ -42,8 +43,8 @@ const About = () => {
       <Container id="about" className="py-5">
         <Row className="text-center mb-4">
           <Col>
-            <h2>Lorem Ipsum</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h2>Kenali Kue Kami</h2>
+            <p>Temukan ragam kue istimewa yang siap memanjakan lidah Anda</p>
           </Col>
         </Row>
         <Row>
@@ -81,7 +82,31 @@ const About = () => {
       </Container>
     </section>
     <section id="service">
-      
+      <div className="container mb-5">
+        <h2 className="text-center">Layanan Kami</h2>
+        <p className="text-center">Nikmati berbagai pilihan kue dan layanan istimewa kami</p>
+        <div className="row">
+          <div className="col-md-4">
+            <span class="material-symbols-outlined">bakery_dining</span>
+            <h4 className="font-weight-bold">Fresh</h4>
+            <p>Diproduksi segar untuk setiap momen istimewa dalam hidup Anda</p>
+            <span class="material-symbols-outlined">cake</span>
+            <h4 className="font-weight-bold">Kue Premium</h4>
+            <p>Memiliki koleksi kue-kue premium, yang memiliki cita rasa sempurna dengan sentuhan kreatif yang eksklusif</p>
+          </div>
+          <div className="col-md-4">
+            <span class="material-symbols-outlined">cookie</span>
+            <h4 className="font-weight-bold">Kue Kering</h4>
+            <p>Tersedia beragam pilihan kue kering lezat untuk memuaskan selera Anda.</p>
+            <span class="material-symbols-outlined">menu_book</span>
+            <h4 className="font-weight-bold">Menu lainnya</h4>
+            <p>Tersedia beragam menu lainnya yang menggugah selera, dari pilihan kue-kue istimewa hingga camilan favorit, semua untuk memuaskan selera Anda.</p>
+          </div>
+          <div className="col-md-4">
+          <img src={bannerimg} className="img-fluid rounded" alt="Banner" />
+          </div>
+        </div>
+      </div>
     </section>
     </>
   );
