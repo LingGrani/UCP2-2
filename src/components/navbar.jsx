@@ -8,13 +8,13 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
-              <NavLink exact className="nav-link" activeClassName="active" to="/UCP2-2">Home</NavLink>
+              <NavLink exact className="nav-link" activeClassName="active" to="/">Home</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" activeClassName="active" to="/UCP2-2/about">About</NavLink>
+              <NavLink className="nav-link" activeClassName="active" to="/about">About</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" activeClassName="active" to="/UCP2-2/contact">Contact</NavLink>
+              <NavLink className="nav-link" activeClassName="active" to="/contact">Contact</NavLink>
             </li>
           </ul>
         </div>
