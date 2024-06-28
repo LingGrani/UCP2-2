@@ -6,17 +6,24 @@ import Home from './components/home';
 import Contact from './components/contact';
 import About from './components/about';
 
-function App() {
+const App = () => {
+  const textStyles = {
+    fontFamily: 'Trebuchet MS'
+  };
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-      <Footer />
-    </Router>
+    <>
+      <div className="textstyle" style={textStyles}>
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+          <Footer />
+        </Router>
+      </div>
+    </>
   );
 }
 

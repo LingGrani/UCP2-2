@@ -3,7 +3,7 @@ import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import fotokueultah3 from '../assets/fotokueultah3.jpg'
 import fotokueultah2 from '../assets/fotokueultah2.jpg'
-import fotokue1 from '../assets/fotokue1.jpg'
+import fotokue1 from '../assets/birthdaycake.jpg'
 import fotokueultah4 from '../assets/fotokueultah4.jpg'
 // Video
 import video from '../assets/video.mp4';
@@ -40,7 +40,7 @@ const Home = () => {
             Your browser does not support the video tag.
           </video>
           <Container style={overlayStyle} className="text-center">
-            <h1 style={textStyles}>Selamat Datang di toko kue kami </h1>
+            <h1 style={textStyles}>Selamat Datang di toko Lake Cake </h1>
             <p style={{ fontSize: '1.5rem' }}>Berusaha menjadi toko terbaik di Kota Yogyakarta</p>
             <Link to="/about">
               <Button variant="primary">Jelajahi Lebih</Button>
@@ -55,8 +55,8 @@ const Home = () => {
               <img src={fotokueultah4} alt="Our Store" className="img-fluid" />
             </Col>
             <Col md={8}>
-              <h2>Sejarah Toko Kami</h2>
-              <p>Toko kami baru di buka dan dibuat website pada hari kamis tanggal 27 Juni 2024 jam 18.00 WIB oleh kelompok 2 Tterimakasi Banyak kelompok 2 yang membantu membuat website toko kami</p>
+              <h2>Sejarah Toko Lake Cake</h2>
+              <p>Toko kami baru di buka dan dibuat website pada hari kamis tanggal 27 Juni 2024 jam 18.00 WIB oleh kelompok 2 Terimakasih Banyak kelompok 2 yang membantu membuat website toko kami</p>
             </Col>
           </Row>
         </Container>

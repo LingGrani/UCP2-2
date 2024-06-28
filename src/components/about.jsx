@@ -21,7 +21,11 @@ const About = () => {
   const handleCloseModal = () => {
     setShowModal(false);
   };
-
+  const textStyles = {
+    fontFamily: 'Arial Black',
+    color: '#F01810',
+    fontSize: '5rem',
+  };
   // Data kue
   const cakes = [
     { id: 1, title: 'Cheese Cake', image: cheesecake, description: 'Cheese Cake yang lumer dengan keju yang meluber luber dan dengan kue yang lembut' },
@@ -34,17 +38,17 @@ const About = () => {
 
   return (
     <>
-    <section id="backgroundimage" style={{ backgroundImage: `url(${bgimage})`, backgroundSize: 'cover', backgroundPosition: 'center', padding: '40px'}}>
+    <section id="backgroundimage" style={{ backgroundImage: `url(${bgimage})`, backgroundSize: 'cover', backgroundPosition: 'center', padding: '2px'}}>
       <div className="mt-5 mb-5 container">
-        <h1>Toko Kue</h1>
+        <h1 style={textStyles}>Lake Cake</h1>
       </div>
     </section>
     <section id="gambarkue">
       <Container id="about" className="py-5">
         <Row className="text-center mb-4">
           <Col>
-            <h2>Lorem Ipsum</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h2>Kenali Kue Kami</h2>
+            <p>Temukan ragam kue istimewa yang siap memanjakan lidah Anda</p>
           </Col>
         </Row>
         <Row>
