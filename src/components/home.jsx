@@ -43,7 +43,7 @@ const Home = () => {
             <h1 style={textStyles}>Selamat Datang di toko Lake Cake </h1>
             <p style={{ fontSize: '1.5rem' }}>Berusaha menjadi toko terbaik di Kota Yogyakarta</p>
             <Link to="/about">
-              <Button variant="primary">Jelajahi Lebih</Button>
+              <Button variant="warning">Jelajahi Lebih</Button>
             </Link>
           </Container>
         </div>
@@ -111,7 +111,7 @@ const Home = () => {
             <Col>
               <p>Jika ada pertanyaan atau ingin memberikan kritik dan saran anda bisa klik tombol di bawah ini ya </p>
               <Link to="/contact">
-                <Button variant="primary">Contact Us</Button>
+                <Button variant="warning">Contact Us</Button>
               </Link>
             </Col>
           </Row>
