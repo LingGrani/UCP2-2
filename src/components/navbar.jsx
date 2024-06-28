@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark justify-content-center bg-warning sticky-top">
       <div className="container-fluid">
-        <a class="navbar-brand mx-0 py-0" href="/">
+        <a class="navbar-brand mx-0 py-0" href="#">
           <img src={logo} alt="Logo" width={60}/>
         </a>
         <div className="collapse navbar-collapse" id="navbarNav">
